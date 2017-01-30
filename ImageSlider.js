@@ -131,7 +131,7 @@ export default class ImageSlider extends Component {
     }
 
     render() {
-        const width = this.state.width;
+        const width = this.props.width || this.state.width;
         const height = this.props.height || this.state.height;
         const position = this._getPosition();
         return (<View>
